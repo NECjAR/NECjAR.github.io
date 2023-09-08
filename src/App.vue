@@ -5,6 +5,17 @@ import Navigation from './components/Navigation.vue'
 </script>
 
 <template>
+  <header>
+  </header>
+
+  <footer>
+    <Navigation />
+    
+    <div class="wrapper">
+      <Footer msg="Out ambition is unlimited." />
+    </div>
+  </footer>
+
   <RouterView />
 </template>
 
