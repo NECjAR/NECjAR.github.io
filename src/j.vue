@@ -6,5 +6,18 @@ import Navigation from './components/Navigation.vue'
 
 <template>
   <main id="﹟main" style="background-color:rgb(10, 10, 10)">
-    <progress class="﹟progress" value="0" max="100"></progress>
-    <audio id="ID_AC_sound" preload="auto"><source src="./assets/media/AchievementUnlocked.mp3" type="audio
+  </main>
+</template>
+
+<style scoped>
+header,
+footer {
+  line-height: 1.5;
+  max-height: 100vh;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 2rem;
+}
+</style>
