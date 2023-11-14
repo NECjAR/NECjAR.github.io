@@ -1,0 +1,451 @@
+.paper-size {
+
+    // The dimensions of the A series paper sizes are defined by the ISO 216 international paper size standard. The A series was adopted in Europe in the 19th century, and is currently used all around the world, apart from in the USA and Canada. The most common paper size used in English speaking countries around the world is A4, which is 210mm × 297mm (8.27 inches × 11.7 inches). The largest sheet from the A series is the A0 size of paper. It has an area of 1m2, and the dimensions are 841mm × 1189mm. The A series uses an aspect ratio of 1:√2, and other sizes in the series are defined by folding the paper in half, parallel to its smaller sides. For example, cutting an A4 in half, will create an two A5 sheets, and so forth. Any size of brochure can be made using paper from the next larger size, for example A3 sheets are folded to make A4 brochures. The standard lengths and widths of the A series are rounded to the nearest millimetre.
+    &.size-A0 {.SetSize(841, 1189)}
+    &.size-A1 {.SetSize(594, 891)}
+    &.size-A2 {.SetSize(420, 594)}
+    &.size-A3 {.SetSize(297, 420)}
+    &.size-A4 {.SetSize(210, 297)}
+    &.size-A5 {.SetSize(148, 210)}
+    &.size-A6 {.SetSize(105, 148)}
+    &.size-A7 {.SetSize(74, 105)}
+    &.size-A8 {.SetSize(52, 74)}
+    &.size-A9 {.SetSize(37, 52)}
+    &.size-A10 {.SetSize(26, 37)}
+    &.size-A11 {.SetSize(18, 26)}
+    &.size-A12 {.SetSize(13, 18)}
+    &.size-A13 {.SetSize(9, 13)}
+    &.size-2A0 {.SetSize(1189, 1182)}
+    &.size-4A0 {.SetSize(1682, 2378)}
+    &.size-A0＋ {.SetSize(914, 1292)}
+    &.size-A1＋ {.SetSize(609, 914)}
+    &.size-A3＋ {.SetSize(329, 483)}
+
+    // The dimensions of the B series paper sizes are defined by the ISO 216 international paper size standard. The B series is not as common as the A series. It was created to provide paper sizes that were not included in the A series. The B series uses an aspect ratio of 1:√2. The area of the B series paper sheets is the geometric mean of the A series sheets. For example, B1 is between A0 and A1 in size. While the B series is less common in office use, it is more regularly used in other special situations, such as posters, books, envelopes and passports.
+    &.size-B0 {.SetSize(1000, 1414)}
+    &.size-B1 {.SetSize(707, 1000)}
+    &.size-B2 {.SetSize(500, 707)}
+    &.size-B3 {.SetSize(353, 500)}
+    &.size-B4 {.SetSize(250, 353)}
+    &.size-B5 {.SetSize(176, 250)}
+    &.size-B6 {.SetSize(125, 176)}
+    &.size-B7 {.SetSize(88, 125)}
+    &.size-B8 {.SetSize(62, 88)}
+    &.size-B9 {.SetSize(44, 62)}
+    &.size-B10 {.SetSize(31, 44)}
+    &.size-B11 {.SetSize(22, 31)}
+    &.size-B12 {.SetSize(15, 22)}
+    &.size-B13 {.SetSize(11, 15)}
+    &.size-B0＋ {.SetSize(1118, 1580)}
+    &.size-B1＋ {.SetSize(720, 1020)}
+    &.size-B2＋ {.SetSize(520, 720)}
+
+    // The dimensions of the C series sizes are defined by the ISO 269 paper size standard. The C series is most commonly used for envelopes. The area of C series paper is the geometric mean of the areas of the A and B series paper of the same number. For example, C4 has a bigger area than A4, but smaller area than B4. Therefore an A4 piece of paper will fit into a C4 envelope. The aspect ratio of C series envelopes is 1:√2, and this means that an A4 sheet of paper when folded in half, parallel to its smaller sides, will fit nicely into a C5 envelope. When it is folded twice, it will fit into a C6 envelope, and so on.
+    &.size-C0 {.SetSize(917, 1297)}
+    &.size-C1 {.SetSize(648, 917)}
+    &.size-C2 {.SetSize(458, 648)}
+    &.size-C3 {.SetSize(324, 458)}
+    &.size-C4 {.SetSize(229, 324)}
+    &.size-C5 {.SetSize(162, 229)}
+    &.size-C6 {.SetSize(114, 162)}
+    &.size-C7 {.SetSize(81, 114)}
+    &.size-C8 {.SetSize(57, 81)}
+    &.size-C9 {.SetSize(40, 57)}
+    &.size-C10 {.SetSize(28, 40)}
+
+    // Paper sizes in North America do not have a consistent aspect ratio like the ISO standard does. They have their own system that they follow. This means that scaling the paper sizes is more difficult. The US Letter paper size is the most popular size used throughout the US. It is also commonly used in Chile and the Philippines.
+    &.size-US-Letter {.SetSize(216, 279)}
+    &.size-US-Legal {.SetSize(216, 356)}
+    &.size-US-Tabloid {.SetSize(279, 432)}
+    &.size-US-Ledger {.SetSize(432, 279)}
+    &.size-US-JuniorLegal {.SetSize(127, 203)}
+    &.size-US-HalfLetter {.SetSize(140, 216)}
+    &.size-US-GovernmentLetter {.SetSize(203, 267)}
+    &.size-US-GovernmentLegal {.SetSize(216, 330)}
+
+    // The American National Standards Institute (ANSI) adopted ANSI/ASME Y14.1, which defined a series of paper sizes in 1996, based on the standard 8.5 inches × 11 inches (216mm × 279mm) Letter size, which was named ‘ANSI A’. This series is fairly similar to the ISO standard, in that if you cut a sheet in half, you will product two sheets of the next smaller size. Ledger/Tabloid is known as ‘ANSI B’. The most common and widely used size is ANSI A, also known as ‘Letter’.
+    &.size-US-ANSI-A {.SetSize(216, 279)}
+    &.size-US-ANSI-B {.SetSize(279, 432)}
+    &.size-US-ANSI-C {.SetSize(432, 559)}
+    &.size-US-ANSI-D {.SetSize(559, 864)}
+    &.size-US-ANSI-E {.SetSize(864, 1118)}
+
+    // The Architectural series (ARCH) is used by architects in North America, and they prefer to use this series instead of ANSI, because the aspect ratios are ratios of smaller whole numbers (4:3 and 3:2). The ARCH series of paper sizes is defined in the ANSI/ASME Y14.1 standard. The ARCH sizes are commonly used by architects for their large format drawings.
+    &.size-US-Arch-A {.SetSize(229, 305)}
+    &.size-US-Arch-B {.SetSize(305, 457)}
+    &.size-US-Arch-C {.SetSize(457, 610)}
+    &.size-US-Arch-D {.SetSize(610, 914)}
+    &.size-US-Arch-E {.SetSize(914, 1219)}
+    &.size-US-Arch-E1 {.SetSize(762, 1067)}
+    &.size-US-Arch-E2 {.SetSize(660, 965)}
+    &.size-US-Arch-E3 {.SetSize(686, 991)}
+    
+    // Also referred to as Office envelopes, are most commonly used in business situations as they are suitable for automated franking and filling. They are long and thin, with an aspect ratio of between 1:1.6 and 1:2.2. The most well known commercial envelope is No.10, as it is able to fit Letter size paper folded three times, or Legal size paper folded four times parallel to the shorter side.
+    &.size-US-E-6¼ {.SetSize(152, 89)}
+    &.size-US-E-6¾ {.SetSize(165, 92)}
+    &.size-US-E-7 {.SetSize(172, 95)}
+    &.size-US-E-7¾ {.SetSize(191, 98)} // Monarch
+    &.size-US-E-8⅝ {.SetSize(219, 92)}
+    &.size-US-E-9 {.SetSize(225, 98)}
+    &.size-US-E-10 {.SetSize(241, 104)}
+    &.size-US-E-11 {.SetSize(264, 114)}
+    &.size-US-E-12 {.SetSize(279, 121)}
+    &.size-US-E-14 {.SetSize(292, 127)}
+    &.size-US-E-16 {.SetSize(305, 152)}
+
+    // Also known as A series envelopes, most commonly used for greeting cards, invitations and photographs. Their aspect ratio ranges between 1:1.3 to 1:1.6, which makes them more of a square shape, rather than long and thin like the Commercial envelopes. The most popular announcement envelopes are Lady Grey (A2) and Diplomat (A9).
+    &.size-US-E-A1 {.SetSize(92, 130)}
+    &.size-US-E-A2-LadyGrey {.SetSize(146, 111)}
+    &.size-US-E-A4 {.SetSize(159, 108)}
+    &.size-US-E-A6-Thompson {.SetSize(165, 121)}
+    &.size-US-E-A7-Besselheim {.SetSize(184, 133)}
+    &.size-US-E-A8-Carr {.SetSize(206, 140)}
+    &.size-US-E-A9-Diplomat {.SetSize(222, 146)}
+    &.size-US-E-A10-Willow {.SetSize(241, 152)}
+    &.size-US-E-A-Long {.SetSize(225, 98)}
+
+    // They are most commonly used for catalogs, brochures, and are made with a center seam to make them more durable. Their aspect ratio ranges between 1:1.3 and 1:1.5, making them very similar shape to the announcement envelopes.
+    &.size-US-E-1 {.SetSize(229, 152)}
+    &.size-US-E-1¾ {.SetSize(241, 152)}
+    &.size-US-E-3 {.SetSize(254, 178)}
+    &.size-US-E-6 {.SetSize(267, 191)}
+    &.size-US-E-8 {.SetSize(286, 210)}
+    &.size-US-E-9¾8 {.SetSize(286, 222)}
+    &.size-US-E-10½ {.SetSize(305, 229)}
+    &.size-US-E-12½ {.SetSize(318, 241)}
+    &.size-US-E-13½ {.SetSize(330, 254)}
+    &.size-US-E-14½ {.SetSize(368, 292)}
+    &.size-US-E-15 {.SetSize(381, 254)}
+    &.size-US-E-15½ {.SetSize(394, 305)}
+    
+    // The standard envelope sizes are defined by the international standard ISO 269. They are generally designed to be used with paper sizes that follow the ISO 216 standard. The most commonly used envelope sizes are from the C series. An A4 piece of paper will fit into a C4 envelope. The DL envelope has a different aspect ratio to the C series, which is why it does not appear in that series. The DL envelope is the most common envelope used in business. DL is short for ‘Dimension Lengthwise’, however it was previously known as DIN Lang in Germany where it originated in the 1920s. An A4 sheet of paper folded three times, parallel to its smaller sides, will fit into a DL envelope.
+    &.size-US-IE-DL {.SetSize(110, 220)}
+    &.size-US-IE-B4 {.SetSize(250, 353)}
+    &.size-US-IE-B5 {.SetSize(176, 250)}
+    &.size-US-IE-B6 {.SetSize(125, 176)}
+    &.size-US-IE-C3 {.SetSize(324, 458)}
+    &.size-US-IE-C4 {.SetSize(229, 324)}
+    &.size-US-IE-C4M {.SetSize(318, 229)}
+    &.size-US-IE-C5 {.SetSize(162, 229)}
+    &.size-US-IE-C6᜵C5 {.SetSize(114, 229)}
+    &.size-US-IE-C6 {.SetSize(114, 162)}
+    &.size-US-IE-C64M {.SetSize(318, 114)}
+    &.size-US-IE-C7᜵C6 {.SetSize(81, 162)}
+    &.size-US-IE-C7 {.SetSize(81, 114)}
+    &.size-US-IE-CE4 {.SetSize(229, 310)}
+    &.size-US-IE-CE64 {.SetSize(114, 310)}
+    &.size-US-IE-E4 {.SetSize(220, 312)}
+    &.size-US-IE-EC45 {.SetSize(220, 229)}
+    &.size-US-IE-EC5 {.SetSize(155, 229)}
+    &.size-US-IE-E5 {.SetSize(115, 220)}
+    &.size-US-IE-E56 {.SetSize(155, 155)}
+    &.size-US-IE-E6 {.SetSize(110, 155)}
+    &.size-US-IE-E65 {.SetSize(110, 220)}
+    &.size-US-IE-R7 {.SetSize(120, 135)}
+    &.size-US-IE-S4 {.SetSize(250, 330)}
+    &.size-US-IE-S5 {.SetSize(185, 255)}
+    &.size-US-IE-S65 {.SetSize(110, 255)}
+    &.size-US-IE-X5 {.SetSize(105, 216)}
+    &.size-US-IE-EX5 {.SetSize(155, 216)}
+
+    // Standard photographic sizes are often named with a format ‘nR’, where the number ‘n’ represents the length of the shortest side in inches. In the normal series, the longest side is the length of the shortest side plus 2 inches, when it is 10 inches or less. When it is 11 inches and above, 3 inches is added to the shortest side. There is an alternative Super series, which is named with a format ‘SnR’. This series has an aspect ratio of approximately 3:2. The aspect ratios of photographic prints tend to vary, so exact scaling of prints is not always a possibility. The Japanese photographic standard are the same print sizes, but are known by different names. For example, the Japanese L corresponds to 3R, while 2L matches 5R.
+    &.size-Photography-Passport {.SetSize(35, 45)}
+    &.size-Photography-2R {.SetSize(64, 89)}
+    &.size-Photography-LD❟DSC {.SetSize(89, 119)}
+    &.size-Photography-3R❟L {.SetSize(89, 127)}
+    &.size-Photography-LW {.SetSize(89, 133)}
+    &.size-Photography-KGD {.SetSize(102, 136)}
+    &.size-Photography-4R❟KG {.SetSize(102, 152)}
+    &.size-Photography-2LD❟DSCW {.SetSize(127, 169)}
+    &.size-Photography-5R❟2L {.SetSize(127, 178)}
+    &.size-Photography-2LW {.SetSize(127, 190)}
+    &.size-Photography-6R {.SetSize(152, 203)}
+    &.size-Photography-8R❟6P {.SetSize(203, 254)}
+    &.size-Photography-S8R❟6PW {.SetSize(203, 305)}
+    &.size-Photography-11R {.SetSize(279, 356)}
+    &.size-Photography-A3＋SuperB {.SetSize(330, 483)}
+
+    // There are many different newspaper formats, and they vary from country to country. The largest newspaper format is known as a Broadsheet, and takes its name from types of popular prints which are usually just on a single sheet containing different types of material and content. A broadsheet is known for having long vertical pages. Other popular newspaper formats include the Berliner and Tabloid, which are smaller than a Broadsheet.
+    &.size-Newspaper-Berliner {.SetSize(315, 470)}
+    &.size-Newspaper-Broadsheet {.SetSize(597, 749)}
+    &.size-Newspaper-US-Broadsheet {.SetSize(381, 578)}
+    &.size-Newspaper-British-Broadsheet {.SetSize(475, 597)}
+    &.size-Newspaper-SouthAfrican-Broadsheet {.SetSize(410, 578)}
+    &.size-Newspaper-Ciner {.SetSize(350, 500)}
+    &.size-Newspaper-Compact {.SetSize(280, 430)}
+    &.size-Newspaper-Nordisch {.SetSize(400, 570)}
+    &.size-Newspaper-Rhenish {.SetSize(350, 520)}
+    &.size-Newspaper-Swiss {.SetSize(320, 475)}
+    &.size-Newspaper-Tabloid {.SetSize(280, 430)}
+    &.size-Newspaper-Canadian-Tabloid {.SetSize(260, 368)}
+    &.size-Newspaper-Norwegian-Tabloid {.SetSize(280, 400)}
+    &.size-Newspaper-NewYorkTimes {.SetSize(305, 559)}
+    &.size-Newspaper-WallStreetJournal {.SetSize(305, 578)}
+
+    // There are a series of common terms to describe the sizes of modern books. These range from folio, which is the largest, to quarto, and octavo, which are respectively smaller. Book sizes are usually measured by the height and width of a leaf, or the height and width of its cover. The size and proportions of a book depends on the size of the original sheet of paper that was used to produce the book. The most common book sizes today are octavo and quarto. However, many books are still produced in larger and smaller sizes. There are some other terms for book sizes. These include elephant folio (up to 23 inches tall), atlas folio (25 inches tall), and a double elephant folio (50 inches tall). The B-format, such as the Penguin Classics, are 129mm by 198mm, which are a common paperback size in the UK.
+    &.size-Books-Folio {.SetSize(304.8, 482.6)}
+    &.size-Books-Quarto {.SetSize(241.3, 304.8)}
+    &.size-Books-ImperialOctavo {.SetSize(209.55, 292.1)}
+    &.size-Books-SuperOctavo {.SetSize(177.8, 279.4)}
+    &.size-Books-RoyalOctavo {.SetSize(165.1, 254)}
+    &.size-Books-MediumOctavo {.SetSize(165.1, 234.95)}
+    &.size-Books-Octavo {.SetSize(152.4, 228.6)}
+    &.size-Books-Crown-Octavo {.SetSize(136.525, 203.2)}
+    &.size-Books-12mo {.SetSize(127, 187.325)}
+    &.size-Books-16mo {.SetSize(101.6, 171.45)}
+    &.size-Books-18mo {.SetSize(101.6, 165.1)}
+    &.size-Books-32mo {.SetSize(88.9, 139.7)}
+    &.size-Books-48mo {.SetSize(63.5, 101.6)}
+    &.size-Books-64mo {.SetSize(50.8, 76.2)}
+    &.size-Books-A-Format {.SetSize(110, 178)}
+    &.size-Books-B-Format {.SetSize(129, 198)}
+    &.size-Books-C-Format {.SetSize(135, 216)}
+
+    // The standard business card size used in Europe is 85mm × 55mm, which is a similar size to banking cards, making them easier to store. The standard business card size in the US and Canada is 3.5 inches × 2 inches (89mm × 51mm). It is fairly common nowadays to move away from the traditional rectangular business card, and be more creative by having square and rounded rectangular shapes. The business card based on the ISO 216 standard is the same size as A8 which is 74mm × 52mm.
+    &.size-Business-ISO-216 {.SetSize(74, 52)}
+    &.size-Business-US᜵Canada {.SetSize(88.9, 50.8)}
+    &.size-Business-European {.SetSize(85, 55)}
+    &.size-Business-Scandinavia {.SetSize(90, 55)}
+    &.size-Business-China {.SetSize(90, 54)}
+    &.size-Business-Japan {.SetSize(91, 55)}
+    &.size-Business-Iran {.SetSize(85, 48)}
+    &.size-Business-Hungary {.SetSize(90, 50)}
+    &.size-Business-ISO-7810-ID-1 {.SetSize(85.6, 54)}
+
+    // The dimensions of the RAW series paper sizes are defined by the ISO 217:1995 paper size standard. The format consists of the RA series and the SRA series. RA stands for ‘Raw Format A’, and SRA stands for ‘Supplementary Raw Format A’. The untrimmed raw paper is used for commercial printing, and as it is slightly larger than the A series format, it allows the ink to bleed to the edge of the paper, before being cut to match the A format.
+    &.size-RAW-RA0 {.SetSize(860, 1220)}
+    &.size-RAW-RA1 {.SetSize(610, 860)}
+    &.size-RAW-RA2 {.SetSize(430, 610)}
+    &.size-RAW-RA3 {.SetSize(305, 430)}
+    &.size-RAW-RA4 {.SetSize(215, 305)}
+    &.size-RAW-SRA0 {.SetSize(900, 1280)}
+    &.size-RAW-SRA1 {.SetSize(640, 900)}
+    &.size-RAW-SRA2 {.SetSize(450, 640)}
+    &.size-RAW-SRA3 {.SetSize(320, 450)}
+    &.size-RAW-SRA4 {.SetSize(225, 320)}
+    &.size-RAW-SRA1＋ {.SetSize(660, 920)}
+    &.size-RAW-SRA2＋ {.SetSize(480, 650)}
+    &.size-RAW-SRA3＋ {.SetSize(320, 460)}
+    &.size-RAW-SRA3＋＋ {.SetSize(320, 464)}
+    &.size-RAW-A0U {.SetSize(880, 1230)}
+    &.size-RAW-A1U {.SetSize(625, 880)}
+    &.size-RAW-A2U {.SetSize(450, 625)}
+    &.size-RAW-A3U {.SetSize(330, 450)}
+    &.size-RAW-A4U {.SetSize(240, 330)}
+
+    // A billboard (or a hoarding) is a large structure used for advertising, and is usually placed outdoors in areas where there is a lot of traffic, such as busy roads. Billboards are used to advertise products to passing pedestrians and drivers, and are very effective, due to their size and positioning in designated market areas. Billboards have many standard sizes, and the names of the billboards originate from the old days when posters were made up of a specific number of panels. Popular billboard sizes start from ‘1 Sheet’ which is 508mm × 762mm, and one of the largest is ‘96 Sheet’ which is 12192mm × 3048mm (40ft × 10ft). The largest standard sized billboard is known as a Bulletin, and is 48ft × 14ft.
+    &.size-Billboard-1-Sheet {.SetSize(508, 762)}
+    &.size-Billboard-2-Sheet {.SetSize(762, 1016)}
+    &.size-Billboard-4-Sheet {.SetSize(1016, 1524)}
+    &.size-Billboard-6-Sheet {.SetSize(1200, 1800)}
+    &.size-Billboard-12-Sheet {.SetSize(3048, 1524)}
+    &.size-Billboard-16-Sheet {.SetSize(2032, 3048)}
+    &.size-Billboard-32-Sheet {.SetSize(4064, 3048)}
+    &.size-Billboard-48-Sheet {.SetSize(6096, 3048)}
+    &.size-Billboard-64-Sheet {.SetSize(8128, 3048)}
+    &.size-Billboard-96-Sheet {.SetSize(12192, 3048)}
+
+    // In 1967 France started using the ISO paper size standard. However before this, France had their own paper size system. The paper formats in this system follow the AFNOR standard which was established in 1926. Some of these paper formats are still used today. When the paper is handcrafted, they are branded with watermarks. The watermarks are where the names of the paper come from. Some of the formats are known as double and quadruple versions. An example of a double version is Carré (450mm × 560mm) and Grande Monde (900mm × 1260mm), whereby the smallest side is doubled. An example of a quadruple version is Cloche (300mm × 400mm) and Soleil (600mm × 800mm), whereby both sides are doubled.
+    &.size-French-Cloche {.SetSize(300, 400)}
+    &.size-French-Ecolier {.SetSize(310, 400)}
+    &.size-French-Telliere {.SetSize(340, 440)}
+    &.size-French-CouronneEcriture {.SetSize(360, 360)}
+    &.size-French-CouronneEdition {.SetSize(370, 470)}
+    &.size-French-Roberto {.SetSize(390, 500)}
+    &.size-French-Ecu {.SetSize(400, 520)}
+    &.size-French-Coquille {.SetSize(440, 560)}
+    &.size-French-Carre {.SetSize(450, 560)}
+    &.size-French-Cavalier {.SetSize(460, 620)}
+    &.size-French-Demi-raisin {.SetSize(325, 500)}
+    &.size-French-Raisin {.SetSize(500, 650)}
+    &.size-French-Jesus {.SetSize(560, 700)}
+    &.size-French-Soleil {.SetSize(600, 800)}
+    &.size-French-ColombierAffiche {.SetSize(600, 800)}
+    &.size-French-ColombierCommercial {.SetSize(630, 900)}
+    &.size-French-PetitAigle {.SetSize(700, 940)}
+    &.size-French-GrandAigle {.SetSize(750, 1050)}
+    &.size-French-GrandMonde {.SetSize(900, 1260)}
+    &.size-French-Univers {.SetSize(1000, 1130)}
+
+    // The Japanese Industrial Standards (JIS), defines two main series of paper sizes. They are the JIS A Series, and the JIS B Series. Both of the these series are widely available in Japan, as well as China and Taiwan. The JIS A Series is exactly the same as the ISO A Series, but with different tolerances. Both the JIS A Series and the JIS B Series have the same aspect ratio, but the area of the B Series paper is 1.5 times larger than the A Series. As well as the JIS A and B Series, there are a number of traditional Japanese paper sizes used mostly by printers. These include Shiroku-ban and Kiku, which are the most commonly used.
+    &.size-Japanese-JBO {.SetSize(1030, 1456)}
+    &.size-Japanese-JB1 {.SetSize(728, 1030)}
+    &.size-Japanese-JB2 {.SetSize(515, 728)}
+    &.size-Japanese-JB3 {.SetSize(364, 515)}
+    &.size-Japanese-JB4 {.SetSize(257, 364)}
+    &.size-Japanese-JB5 {.SetSize(182, 257)}
+    &.size-Japanese-JB6 {.SetSize(128, 182)}
+    &.size-Japanese-JB7 {.SetSize(91, 128)}
+    &.size-Japanese-JB8 {.SetSize(64, 91)}
+    &.size-Japanese-JB9 {.SetSize(45, 64)}
+    &.size-Japanese-JB10 {.SetSize(32, 45)}
+    &.size-Japanese-JB11 {.SetSize(22, 32)}
+    &.size-Japanese-JB12 {.SetSize(16, 22)}
+    &.size-Japanese-Shiroku4 {.SetSize(264, 379)}
+    &.size-Japanese-Shiroku5 {.SetSize(189, 262)}
+    &.size-Japanese-Shiroku6 {.SetSize(127, 188)}
+    &.size-Japanese-Kiku4 {.SetSize(227, 306)}
+    &.size-Japanese-Kiku5 {.SetSize(151, 227)}
+
+    // The dimensions of the Canadian series paper sizes are defined by the CAN 2-9.60M Canadian paper size standard. These canadian paper sizes are the US ANSI paper sizes rounded to the nearest 5mm. The P series includes paper sizes P1 to P6, which corresponds to the ANSI A,B,C and D, as well as two additional sizes smaller than ANSI A. The sizes now appear to be no longer used and are obsolete. The Canadian P series doesn’t have a single aspect ratio like the ISO standard sizes, which makes enlarging and reducing the sizes harder. The Canadian P series are also occasionally referred to as PA1, PA2 etc.
+    &.size-Canadian-P1 {.SetSize(560, 860)}
+    &.size-Canadian-P2 {.SetSize(430, 560)}
+    &.size-Canadian-P3 {.SetSize(280, 430)}
+    &.size-Canadian-P4 {.SetSize(215, 280)}
+    &.size-Canadian-P5 {.SetSize(140, 216)}
+    &.size-Canadian-P6 {.SetSize(107, 140)}
+
+    // Published on 18 August 1922, the German standard DIN 476 is the original specification of the A, B and C paper sizes. In 1991, it was split into DIN 476-1 for the A and B formats and 476-2 for the C series. The former has been withdrawn in 2002 in favor of adopting the international standard as DIN EN ISO 216, but part 2 has been retained and was last updated in 2008. The first and the second editions of DIN 476 from 1922 and 1925 also included a D series.
+    // The Swedish and German D series basically contain the same sizes, but are offset by one, i.e. DIN D4 equals SIS D5 and so on.
+    &.size-German-D0 {.SetSize(771, 1090)}
+    &.size-German-D1 {.SetSize(545, 771)}
+    &.size-German-D2 {.SetSize(385, 545)}
+    &.size-German-D3 {.SetSize(272, 385)}
+    &.size-German-D4 {.SetSize(192, 272)}
+    &.size-German-D5 {.SetSize(136, 192)}
+    &.size-German-D6 {.SetSize(96, 136)}
+    &.size-German-D7 {.SetSize(68, 96)}
+    &.size-German-D8 {.SetSize(48, 68)}
+
+    // The Swedish standard SIS 01 47 11 generalised the ISO system of A, B, and C formats by adding D, E, F, and G formats to it. Its D format sits between a B format and the next larger A format (just like C sits between A and the next larger B). The remaining formats fit in between all these formats, such that the sequence of formats A4, E4, C4, G4, B4, F4, D4, A3 is a geometric progression, in which the dimensions grow by a factor 16√2 from one size to the next.
+    &.size-Swedish-SIS-E0 {.SetSize(878, 1242)}
+    &.size-Swedish-SIS-E1 {.SetSize(621, 878)}
+    &.size-Swedish-SIS-E2 {.SetSize(439, 621)}
+    &.size-Swedish-SIS-E3 {.SetSize(310, 439)}
+    &.size-Swedish-SIS-E4 {.SetSize(220, 310)}
+    &.size-Swedish-SIS-E5 {.SetSize(155, 220)}
+    &.size-Swedish-SIS-E6 {.SetSize(110, 155)}
+    &.size-Swedish-SIS-E7 {.SetSize(78, 110)}
+    &.size-Swedish-SIS-E8 {.SetSize(55, 78)}
+    &.size-Swedish-SIS-E9 {.SetSize(39, 55)}
+    &.size-Swedish-SIS-E10 {.SetSize(27, 39)}
+    &.size-Swedish-SIS-F0 {.SetSize(958, 1354)}
+    &.size-Swedish-SIS-F1 {.SetSize(677, 958)}
+    &.size-Swedish-SIS-F2 {.SetSize(478, 677)}
+    &.size-Swedish-SIS-F3 {.SetSize(339, 479)}
+    &.size-Swedish-SIS-F4 {.SetSize(239, 339)}
+    &.size-Swedish-SIS-F5 {.SetSize(169, 239)}
+    &.size-Swedish-SIS-F6 {.SetSize(120, 169)}
+    &.size-Swedish-SIS-F7 {.SetSize(85, 120)}
+    &.size-Swedish-SIS-F8 {.SetSize(60, 85)}
+    &.size-Swedish-SIS-F9 {.SetSize(42, 60)}
+    &.size-Swedish-SIS-F10 {.SetSize(30, 42)}
+
+    // G5 (169 × 239 mm) and E5 (155 × 220 mm) are popular in Sweden and the Netherlands for printing dissertations, but the other formats have not turned out to be particularly useful in practice. They have not been adopted internationally and the Swedish standard has been withdrawn.
+    &.size-Swedish-SIS-G0 {.SetSize(1044, 1477)}
+    &.size-Swedish-SIS-G1 {.SetSize(738, 1044)}
+    &.size-Swedish-SIS-G2 {.SetSize(522, 738)}
+    &.size-Swedish-SIS-G3 {.SetSize(369, 522)}
+    &.size-Swedish-SIS-G4 {.SetSize(261, 369)}
+    &.size-Swedish-SIS-G5 {.SetSize(185, 261)}
+    &.size-Swedish-SIS-G6 {.SetSize(131, 185)}
+    &.size-Swedish-SIS-G7 {.SetSize(92, 131)}
+    &.size-Swedish-SIS-G8 {.SetSize(65, 92)}
+    &.size-Swedish-SIS-G9 {.SetSize(46, 65)}
+    &.size-Swedish-SIS-G10 {.SetSize(33, 46)}
+
+    // The Swedish and German D series basically contain the same sizes, but are offset by one, i.e. DIN D4 equals SIS D5 and so on.
+    &.size-Swedish-SIS-D0 {.SetSize(1091, 1542)}
+    &.size-Swedish-SIS-D1 {.SetSize(771, 1091)}
+    &.size-Swedish-SIS-D2 {.SetSize(545, 771)}
+    &.size-Swedish-SIS-D3 {.SetSize(386, 545)}
+    &.size-Swedish-SIS-D4 {.SetSize(273, 386)}
+    &.size-Swedish-SIS-D5 {.SetSize(193, 273)}
+    &.size-Swedish-SIS-D6 {.SetSize(136, 193)}
+    &.size-Swedish-SIS-D7 {.SetSize(96, 136)}
+    &.size-Swedish-SIS-D8 {.SetSize(68, 96)}
+    &.size-Swedish-SIS-D9 {.SetSize(48, 68)}
+    &.size-Swedish-SIS-D10 {.SetSize(34, 48)}
+
+    // The dimensions of the Colombian series paper sizes are based on ISO B1 (707mm × 1000mm), which is referred to as pliego. These paper sizes are most commonly used for industrial and commercial printing. A fraction prefix is added for smaller sizes which are halved, e.g ½ pliego, ¼ pliego and ⅛ pliego. Other Colombian paper sizes include Carta, Oficio and Extra Tabloide.
+    &.size-Colombian-Carta {.SetSize(216, 279)}
+    &.size-Colombian-ExtraTabloide {.SetSize(304, 457.2)}
+    &.size-Colombian-Oficio {.SetSize(216, 330)}
+    &.size-Colombian-1᜵8_pliego {.SetSize(250, 350)}
+    &.size-Colombian-1᜵4_pliego {.SetSize(350, 500)}
+    &.size-Colombian-1᜵2_pliego {.SetSize(500, 700)}
+    &.size-Colombian-Pliego {.SetSize(700, 1000)}
+
+    // The dimensions of the Chinese series paper sizes are defined by the GB/T 148-1997 Chinese paper size standard. This standard documents the ISO series, but it does not follow the same principles. Originating from the Republic of China, 1912-1949, the Chinese format is a custom series known as the D series. It is different from the D Series in Sweden. The aspect ratio is approximately √2. The longest side of a Chinese D Series is exactly two times larger than the short side of the next smallest size.
+    &.size-Chinese-D0 {.SetSize(764, 1064)}
+    &.size-Chinese-D1 {.SetSize(532, 760)}
+    &.size-Chinese-D2 {.SetSize(380, 528)}
+    &.size-Chinese-D3 {.SetSize(264, 376)}
+    &.size-Chinese-D4 {.SetSize(188, 260)}
+    &.size-Chinese-D5 {.SetSize(130, 184)}
+    &.size-Chinese-D6 {.SetSize(92, 126)}
+    &.size-Chinese-RD0 {.SetSize(787, 1092)}
+    &.size-Chinese-RD1 {.SetSize(546, 787)}
+    &.size-Chinese-RD2 {.SetSize(393, 546)}
+    &.size-Chinese-RD3 {.SetSize(273, 393)}
+    &.size-Chinese-RD4 {.SetSize(196, 273)}
+    &.size-Chinese-RD5 {.SetSize(136, 196)}
+    &.size-Chinese-RD6 {.SetSize(98, 136)}
+
+    // Before the United Kingdom adopted the ISO 216 standard, British Imperial paper sizes were used. The Imperial paper sizes were used to define large sheets of paper, and the naming convention was derived from the sheet name, and how many times it was folded. For example ‘Royal’ paper is 508mm × 635mm, and when it is folded three times, it makes 8 sheets and goes by the name ‘Royal Octavo’ which is 253 mm × 158 mm. This is a name given to modern hardbound books.
+    &.size-Imperial-Anriquarian {.SetSize(787, 1346)}
+    &.size-Imperial-Atlas {.SetSize(660, 864)}
+    &.size-Imperial-Brief {.SetSize(343, 406)}
+    &.size-Imperial-Broadsheet {.SetSize(457, 610)}
+    &.size-Imperial-Cartridge {.SetSize(533, 660)}
+    &.size-Imperial-Columber {.SetSize(597, 876)}
+    &.size-Imperial-CopyDraught {.SetSize(406, 508)}
+    &.size-Imperial-Crown {.SetSize(381, 508)}
+    &.size-Imperial-Demy {.SetSize(445, 572)}
+    &.size-Imperial-DoubleDemy {.SetSize(562, 902)}
+    &.size-Imperial-QuadDemy {.SetSize(889, 1143)}
+    &.size-Imperial-Elephant {.SetSize(584, 711)}
+    &.size-Imperial-DoubleElephant {.SetSize(678, 1016)}
+    &.size-Imperial-Emperor {.SetSize(1219, 1829)}
+    &.size-Imperial-Foolscap {.SetSize(343, 432)}
+    &.size-Imperial-SmallFoolscap {.SetSize(337, 419)}
+    &.size-Imperial-GrandEagle {.SetSize(730, 1067)}
+    &.size-Imperial-Imperial {.SetSize(559, 762)}
+    &.size-Imperial-Medium {.SetSize(470, 584)}
+    &.size-Imperial-Monarch {.SetSize(184, 267)}
+    &.size-Imperial-Post {.SetSize(394, 489)}
+    &.size-Imperial-HalfPost {.SetSize(495, 597)}
+    &.size-Imperial-PrinchedPost {.SetSize(375, 470)}
+    &.size-Imperial-LargePost {.SetSize(394, 508)}
+    &.size-Imperial-DoubleLargePost {.SetSize(533, 838)}
+    &.size-Imperial-DoublePost {.SetSize(483, 762)}
+    &.size-Imperial-Pott {.SetSize(318, 381)}
+    &.size-Imperial-Princess {.SetSize(546, 711)}
+    &.size-Imperial-Quarto {.SetSize(229, 279)}
+    &.size-Imperial-Royal {.SetSize(508, 635)}
+    &.size-Imperial-SuperRoyal {.SetSize(483, 686)}
+
+    // When the United Kingdom started using ISO sizes, the traditional paper sizes were no longer commonly used. Most of the traditional sizes were used in the production of books, and were never used for other stationery purposes. ‘Folio’ or ‘Foolscap’ is an alias for Foolscap Folio, as is ‘Kings’ being an alias for ‘Foolscap Quarto’.
+    &.size-Traditional-Dukes {.SetSize(140, 178)}
+    &.size-Traditional-Foolscap {.SetSize(203, 330)}
+    &.size-Traditional-Imperial {.SetSize(178, 229)}
+    &.size-Traditional-Kings {.SetSize(165, 203)}
+    &.size-Traditional-Quarto {.SetSize(203, 254)}
+
+    // The transitional paper size formats consist of the PA Series and the F Series. The PA Series proposed to be included into the ISO 216 standard in 1975. They were rejected by the committee who decided that the number of standardised paper formats should be kept to a minimum. However this series is still used today, in particular PA4 (or L4). Its width is that of the ISO standard A4, and height of Canadian P4 (210mm × 280mm). The PA4 format can easily be printed on equipment designed for A4 or US Letter size, which is why it is used by many international magazines, and is a good solution as the format of presentation slides. PA4 is more of a page format than a paper size. It has a 4:3 aspect ratio when in landscape orientation.
+    &.size-Transitional-PA0 {.SetSize(840, 1120)}
+    &.size-Transitional-PA1 {.SetSize(560, 840)}
+    &.size-Transitional-PA2 {.SetSize(420, 560)}
+    &.size-Transitional-PA3 {.SetSize(280, 420)}
+    &.size-Transitional-PA4 {.SetSize(210, 280)}
+    &.size-Transitional-PA5 {.SetSize(140, 210)}
+    &.size-Transitional-PA6 {.SetSize(105, 140)}
+    &.size-Transitional-PA7 {.SetSize(70, 105)}
+    &.size-Transitional-PA8 {.SetSize(52, 70)}
+    &.size-Transitional-PA9 {.SetSize(35, 52)}
+    &.size-Transitional-PA10 {.SetSize(26, 35)}
+
+    // In Southeast Asia, a common size used is the non-standard F4. The longer side is 330mm, which is the same as the British Foolscap. The shorter side is 210mm, which is the same as the ISO A4. The F4 is occasionally known as (metric) Foolscap or Folio.
+    &.size-Transitional-F0 {.SetSize(203, 254)}
+    &.size-Transitional-F1 {.SetSize(660, 841)}
+    &.size-Transitional-F2 {.SetSize(420, 660)}
+    &.size-Transitional-F3 {.SetSize(330, 420)}
+    &.size-Transitional-F4 {.SetSize(210, 330)}
+    &.size-Transitional-F5 {.SetSize(165, 210)}
+    &.size-Transitional-F6 {.SetSize(105, 165)}
+    &.size-Transitional-F7 {.SetSize(82, 105)}
+    &.size-Transitional-F8 {.SetSize(52, 82)}
+    &.size-Transitional-F9 {.SetSize(41, 52)}
+    &.size-Transitional-F10 {.SetSize(26, 41)}
+
+}
