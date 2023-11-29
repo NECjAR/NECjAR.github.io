@@ -1,4 +1,0 @@
-This is a Brave Creators publisher verification file.
-
-Domain: necjar.com
-Token: 921220e6a10ef31f49160b56e77a6d9c5cd0f5aa88bd31f2fc724f33beaaefc2
