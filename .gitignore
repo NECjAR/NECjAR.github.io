@@ -19,6 +19,10 @@ coverage
 
 # Source
 *.psd
+*Copy.jpg
+*Copy.png
+*SRC.jpg
+*SRC.png
 
 # Editor directories and files
 .vscode/*
