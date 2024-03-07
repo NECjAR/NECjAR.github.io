@@ -1,0 +1,4 @@
+*.PSD
+src/*
+node_modules/*
+*.mp4
