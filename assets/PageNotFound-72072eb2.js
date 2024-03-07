@@ -1,1 +1,0 @@
-import{o as a,c as o,b as s,F as t,a as e,H as n}from"./index-95898c9c.js";const r=e("div",{class:"page centered-flexbox"},[e("div",{class:"centered-grid 𝈷𝈶"},[e("h1",null,"Page not found"),e("p",null,"I'm sorry.")])],-1),u={__name:"PageNotFound",setup(c){return(l,d)=>(a(),o(t,null,[r,s(n)],64))}};export{u as default};
