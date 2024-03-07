@@ -1,9 +1,3 @@
-:root {--red:28; --green:150; --blue:130; 
-  --accessible-color:~"calc((((var(--red) * 299) + (var(--green) * 587) + (var(--blue) * 114)) - 128000) * -1000)";
-  --threshold:.5;
-  --border-threshold:.8;
-}
-
 .AddColor(@name, @color, @red, @green, @blue, @hue, @grayscale, @brightness) {
   .⣿@{name} {background-color:rgb(@red, @green, @blue); background-image:linear-gradient(0deg, rgba(@red, @green, @blue, 1) 0%, rgba(@red * 1.2, @green * 1.2, @blue * 1.2, 0.9) 50%, rgba(@red, @green, @blue, 1) 100%);
     .⢵:not(.⢵⠁) {background-color:rgba(@red, @green, @blue, 0.9);}
@@ -16,32 +10,30 @@
   .⢸⢸⢸@{name} {filter:hue-rotate(@hue) grayscale(@grayscale);}
   .⢸⢸@{name} {color:@color!important;}
   .⢸@{name} {color:@color;
-    .⣳ {
-      [data-achievement]:not(.⣲):not(.⣰) {
-        .⣸ {background-image:linear-gradient(to left, rgb(0,0,0,0) 0%, rgb(@red / 2, @green / 2, @blue / 2) 100%);}
-        .⣸⠦ {color:@color;}
-      }
+    .⣳ [data-achievement]:not(.⣲):not(.⣰) {
+      .⣸ {background-image:linear-gradient(to left, rgb(0,0,0,0) 0%, rgb((@red / 2), (@green / 2), (@blue / 2)) 100%);}
+      .⣸⠦ {color:@color;}
     }
     /*.⣸⠦⠠ {filter:hue-rotate(@hue);}*/
-    .⣿⠠ {background-color:rgb(@red / 2, @green / 2, @blue / 2);}
-    .⠭ .⠭, &.⠭ .⠭,
+    .⣿⠠ {background-color:rgb((@red / 2), (@green / 2), (@blue / 2));}
+    .j-tooltip, &.j-tooltip,
     .⢸⠠,
     a {color:@color;}
     a[href*="out?"]::after,
     hr,
-    .jlogo,
-    .⡙⠁⠁::after,
+    .j-logo-sm,
+    .inline-block::after,
     .✦,
     .⡻::after,
     .⢇⡀ {filter:hue-rotate(@hue) grayscale(@grayscale) brightness(@brightness);}
     .⡓ {filter:hue-rotate(@hue) grayscale(@grayscale);}
     .⡢::after {filter:hue-rotate(@hue) brightness(@brightness) blur(40px);}
     .⡎ {filter:invert(1), hue-rotate(@hue);}
-    .⡙⠦ {
+    .j-menu-link⠦ {
       &:hover,
-      &.⠶,
-      ~.⠭ .⡙:hover,
-      ~.⠭ .⡙.⠶ {background-color:@color;}
+      &.active,
+      ~.j-tooltip .j-menu-link:hover,
+      ~.j-tooltip .j-menu-link.active {background-color:@color;}
       >.✦ {filter:hue-rotate(@hue);}
     }
     .⡣ {background-color:@color;}
@@ -49,9 +41,9 @@
     #﹟aside {background-color:rgba(@red, @green, @blue, 0.05); color:@color;}
     .⢚ {
       &:hover,
-      &.⠶ {border-color:@color;}
+      &.active {border-color:@color;}
     }
-    .⢚.⠶ .⢚⠁,
+    .⢚.active .⢚⠁,
     .⠦ .⢺:hover {box-shadow:0 0 75px rgba(@red, @green, @blue, 0.3);}
     /*.⢺:not(.⢺⠕) {
       &.⢺4x3,
@@ -59,15 +51,18 @@
       &.⢺3x5,
       &.⢺3x5⠁ {border:1px solid rgba(@red,@green,@blue,.3);}
     }*/
-    .⡰ {color:@color;
-      &:hover {box-shadow:0 0 75px rgba(@red, @green, @blue, 0.6);}
-    }
-    .𖨳:target {box-shadow:0 0 175px 10px rgba(@red, @green,@blue,1); animation:j-opacity-loop 1s 20; transition:@j-second-speed ease all;}
-    .⢭ {
-      &:hover {background-color:rgba(@red, @green, @blue, 0.05);}
-      input:checked + .⢭⠒ {color:@color;
+    .𖨳:target {box-shadow:0 0 175px 10px rgba(@red, @green,@blue,1); animation:j-opacity-loop 1s 20; transition:.3s ease all;}
+    .j-logo {background-image:linear-gradient(105deg, @color, @color - 50, @color);}
+    .j-checkbox {
+      &:hover .j-checkbox-c {background-color:rgba(@red, @green, @blue, 0.05);}
+      input:checked + .j-checkbox-c {color:@color;
         &::before {background-color:@color; box-shadow:0 0 5px rgba(@red, @green, @blue, 0.6);}
       }
+      .j-checkbox-c::before,
+      input:checked + .j-checkbox-c::before,
+      .j-checkbox-g::before {background-color:@color - 50;}
+      input:checked + .j-checkbox-c::before,
+      .j-checkbox-g::before {background-color:@color; background-image:linear-gradient(90deg, @color, @color - 50, @color);}
     }
     .♹♺ {
       &::-webkit-scrollbar-thumb {background-color:rgba(@red * 2, @green * 2, @blue * 2, 0.9);}

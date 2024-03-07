@@ -21,6 +21,7 @@ coverage
 *.psd
 *Copy.jpg
 *Copy.png
+/SRC/
 *SRC.jpg
 *SRC.png
 

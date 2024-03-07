@@ -1,4 +1,6 @@
 <script setup>
+import Donate from './Donate.vue'
+
 defineProps({
   msg: {
     type: String,
@@ -8,159 +10,103 @@ defineProps({
 </script>
 
 <template>
-  <footer>
-    <div class="⢯ ⢯⠒ ⢯⠇">
-      <div class="⢗ ⢗⠃ ⢗⠒ ﹟footer">
-        <div class="⎵"></div>
-          <div class="⤄">
-            <iframe src="https://yoomoney.ru/quickpay/button-widget?targets=NECjAR&default-sum=50&button-text=14&yoomoney-payment-type=on&button-size=l&button-color=black&successURL=&quickpay=small&account=41001217920275&" width="227" height="48" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no"></iframe>
-          </div>
-        <div class="⎵"></div>
-        <a href="/" class="jlogo"></a>
-        <div class="⡚ ⎋">
-          <span class="⡙⠁⠁ ⎚📱">
-            <a class="⡙ ⠶ ⡯NECjAR" href="/">NEC<span class="⡯j">j</span>AR</a>
-          </span>
-          <span class="⡙⠁⠁ ⠭">
-            <a class="⡙" href="projects">Pro<span class="⡯j">j</span>ects</a>
-            <span class="⠭ ⠭⠇">
-              <a class="⡙" href="adleiavde">ADLEIAVDE</a>
-              <a class="⡙" href="anna">ANNA</a>
-              <a class="⡙" href="echo">ECHO</a>
-              <a class="⡙" href="gr8">GR8</a>
-              <a class="⡙" href="headheldhigh">HEAD HELD HIGH</a>
-              <a class="⡙" href="projects">...</a>
+  <footer class="﹟footer">
+    <div class="⇹ ⇔ ⇕">
+      <!--<div class="⇓ ⇔">
+        <ul class="j-footer-link-container ⎋ ⢸white">
+          <li class="j-footer-link-item">
+            <a href="/" class="j-logo ⡯j">j</a>
+          </li>
+          <li class="j-footer-link-item ⎚📱">
+            <a class="j-menu-link j-menu-nectar active ⡯NECjAR" href="/"><span class="j-menu-nectar-c">NEC<span class="⡯j">j</span>AR</span></a>
+          </li>
+          <li class="j-footer-link-item">
+            <a class="j-menu-link j-menu-nectar" href="projects"><span class="j-menu-nectar-c">Pro<span class="⡯j">j</span>ects</span></a>
+            <span class="j-menu-link-container">
+              <a class="j-menu-link j-menu-nectar" href="adleiavde"><span class="j-menu-nectar-c">ADLEIAVDE</span></a>
+              <a class="j-menu-link j-menu-nectar" href="anna"><span class="j-menu-nectar-c">ANNA</span></a>
+              <a class="j-menu-link j-menu-nectar" href="echo"><span class="j-menu-nectar-c">ECHO</span></a>
+              <a class="j-menu-link j-menu-nectar" href="gr8"><span class="j-menu-nectar-c">GR8</span></a>
+              <a class="j-menu-link j-menu-nectar" href="headheldhigh"><span class="j-menu-nectar-c">HEAD HELD HIGH</span></a>
+              <a class="j-menu-link j-menu-nectar" href="projects"><span class="j-menu-nectar-c">...</span></a>
             </span>
-          </span>
-          <span class="⡙⠁⠁ ⠭">
-            <a class="⡙" href="contact">Contact</a>
-            <span class="⠭ ⠭⠇">
-              <a class="⡙" href="kadae">Kadae</a>
-              <a class="⡙" href="terms">Terms</a>
+          </li>
+          <li class="j-footer-link-item">
+            <a class="j-menu-link j-menu-nectar" href="contact"><span class="j-menu-nectar-c">Contact</span></a>
+            <span class="j-menu-link-container">
+              <a class="j-menu-link j-menu-nectar" href="kadae"><span class="j-menu-nectar-c">Kadae</span></a>
+              <a class="j-menu-link j-menu-nectar" href="terms"><span class="j-menu-nectar-c">Terms</span></a>
             </span>
-          </span>
-          <span class="⡙⠁⠁ ⠭">
-            <a class="⡙" href="blogs">Blogs</a>
-            <span class="⠭ ⠭⠇">
-              <a class="⡙" href="out?http://acomics.ru/~traveler" target="_blank">HHH: TRAVELER #<var>888</var></a>
-              <a class="⡙" href="out?http://acomics.ru/~digger" target="_blank">HHH: DIGGER #<var>888</var></a>
-              <a class="⡙" href="necjx">NECjX</a>
-              <a class="⡙" href="score">SCØRE</a>
+          </li>
+          <li class="j-footer-link-item">
+            <a class="j-menu-link j-menu-nectar" href="blogs"><span class="j-menu-nectar-c">Blogs</span></a>
+            <span class="j-menu-link-container">
+              <a class="j-menu-link j-menu-nectar" href="out?http://acomics.ru/~traveler" target="_blank"><span class="j-menu-nectar-c">HHH: TRAVELER #<var>888</var></span></a>
+              <a class="j-menu-link j-menu-nectar" href="out?http://acomics.ru/~digger" target="_blank"><span class="j-menu-nectar-c">HHH: DIGGER #<var>888</var></span></a>
+              <a class="j-menu-link j-menu-nectar" href="necjx"><span class="j-menu-nectar-c">NECjX</span></a>
+              <a class="j-menu-link j-menu-nectar" href="score"><span class="j-menu-nectar-c">SCØRE</span></a>
             </span>
-          </span>
-          <span class="⡙⠁⠁">
-            <a class="⡙ ✧" href="https://wiki.necjar.com" target="_blank"><i class="fab fa-wikipedia-w"></i> Wiki</a>
-          </span>
-          <span class="⡙⠁⠁ ⠭">
-            <a class="⡙ ✧" href="world">World</a>
-            <span class="⠭ ⠭⠇">
-              <a class="⡙" href="earth">Earth</a>
-              <a class="⡙" href="sun">Sun</a>
+          </li>
+          <li class="j-footer-link-item">
+            <a class="j-menu-link j-menu-nectar ✧" href="https://wiki.necjar.com" target="_blank"><span class="j-menu-nectar-c"><i class="fab fa-wikipedia-w"></i> Wiki</span></a>
+          </li>
+          <li class="j-footer-link-item">
+            <a class="j-menu-link j-menu-nectar ✧" href="world"><span class="j-menu-nectar-c">World</span></a>
+            <span class="j-menu-link-container">
+              <a class="j-menu-link j-menu-nectar" href="earth"><span class="j-menu-nectar-c">Earth</span></a>
+              <a class="j-menu-link j-menu-nectar" href="sun"><span class="j-menu-nectar-c">Sun</span></a>
             </span>
-          </span>
-          <span class="⡙⠁⠁">
-            <a class="⡙" href="store">Store</a>
-          </span>
-          <span class="⡙⠁⠁ ⠭">
-            <a class="⡙" href="hive">⬢⬡ HIVE.café</a>
-            <span class="⠭ ⠭⠇">
-              <a class="⡙" href="out?<?=$jPage_NECjAR_TelegramChat_link?>" target="_blank">CHAT <i class="fab fa-telegram"></i> @HiveCafe</a>
+          </li>
+          <li class="j-footer-link-item">
+            <a class="j-menu-link j-menu-nectar" href="store"><span class="j-menu-nectar-c">Store</span></a>
+          </li>
+          <li class="j-footer-link-item">
+            <a class="j-menu-link j-menu-nectar" href="hive"><span class="j-menu-nectar-c">⬢⬡ HIVE.café</span></a>
+            <span class="j-menu-link-container">
+              <a class="j-menu-link j-menu-nectar" href="out?<?=$jPage_NECjAR_TelegramChat_link?>" target="_blank"><span class="j-menu-nectar-c">CHAT <i class="fab fa-telegram"></i> @HiveCafe</span></a>
             </span>
-          </span>
-          <span class="⡙⠁⠁">
-            <a class="⡙ ✧ ⣲⡣ ⡣⠿ ⠭" href="achievements">
-              <i class="far fa-star"></i>
-              <span class="⠭ ⠭⠇ ⠭⠁"><span class="═²"></span> + <span class="═³"></span></span>
+          </li>
+          <li class="j-footer-link-item">
+            <a class="j-menu-link j-menu-nectar ✧ ⣲⡣ ⡣⠿" href="achievements">
+              <span class="j-menu-nectar-c">
+                <i class="far fa-star"></i>
+                <span class="j-menu-link-container"><span class="═²"></span> + <span class="═³"></span></span>
+              </span>
             </a>
-          </span>
-          <div class="⊸">
-            <span class="⡙⠁⠁">
-              <a class="⡙ ⡙⠦ ≡🚩 ✦✂" href="javascript:;"><i class="fas fa-bars ⡯⠃"></i> Menu</a>
-            </span>
-            <span id="options" class="⡙⠁⠁ 𖨳">
-              <a class="⡙ ⡙⠦ ⣦⠁ ✦✂" href="javascript:;"><i class="fas fa-cog ⡯⠃"></i> Options</a>
-            </span>
-            <span id="language" class="⡙⠁⠁ 𖨳">
-              <a class="⡙ ⡙⠦ ✦✂ ⠶?>" href="">EN</a>
-              <a class="⡙ ⡙⠦ ✦✂" href="">RU</a>
-            </span>
-          </div>
-        </div>
-        <hr />
-        <div class="x⡼⠃">
+          </li>
+        </ul>
+      </div>-->
+      <div class="⇓ ⇔">
+        <div class="∅"></div>
+        <div class="j-footer-copyright">
           <p>&copy; 2011&ndash;2111 <span class="⡯NECjAR">NEC<span class="⡯j">j</span>AR</span>, all right reserved.</p>
-          <p class="⟺"><!-- Copyright -->></p>
+          <!--<p>ADLEIAVDE, AETHEOPTERA, ANNA, CATAE, ECHO, GR8, HEAD HELD HIGH, HIVE.CAFÉ/BAR, KADAE, TRAVIS TRAVELER, NECjAR, NECjX, "OUR AMBITION IS UNLIMITED" and all related logos, character design, novels, games, movies, ideas and/or concepts are created by the man behind the NECjAR and/or trademarks of NECjAR (Nectar, a Kadae production, NECjAR Corporation on planet Earth and Solar System). All other trademarks are property of their respective owners.</p>
+          <p>Creating timeless interactive entertainment that makes positive change to the human psyche worldwide.<br />Nectar makes everything better. Our ambition is unlimited.</p>
           <div class="⡔ ⎋">
-            <a class="🇹🇳 ⠭" href="out?https://twitter.com/NECjAR" target="_blank" style="color:#1da1f2"><i class="fab fa-twitter"></i><span class="⠭ ⠭⠇ ⢸white">@NECjAR<small><br />Twitter.</small></span></a>
-            <a class="🇹🇳 ⠭" href="out?https://t.me/NECjAR" target="_blank" style="color:#32afed"><i class="fab fa-telegram"></i><span class="⠭ ⠭⠇ ⢸white">@NECjAR<small><br />Telegram.</small></span></a>
-            <a class="🇹🇳 ⠭" href="out?https://github.com/NECjAR" target="_blank" style="color:#c6cbd1"><i class="fab fa-github"></i><span class="⠭ ⠭⠇ ⢸white">NECjAR<small><br />GitHub.</small></span></a>
-            <a class="🇹🇳 ⠭" href="out?https://reddit.com/r/NECjAR" target="_blank" style="color:#ff4500"><i class="fab fa-reddit"></i><span class="⠭ ⠭⠇ ⢸white">r/NECjAR<small><br />Reddit.</small></span></a>
-            <a class="🇹🇳 ⠭" href="out?https://www.linkedin.com/company/necjar" target="_blank" style="color:#0077b5"><i class="fab fa-linkedin"></i><span class="⠭ ⠭⠇ ⢸white">NECjAR<small><br />LinkedIn.</small></span></a>
-            <a class="🇹🇳 ⠭" href="out?https://www.youtube.com/c/NECjAR?sub_confirmation=1" target="_blank" style="color:#ff0000"><i class="fab fa-youtube"></i><span class="⠭ ⠭⠇ ⢸white">NECjAR<small><br />Subscribe.</small></span></a>
-            <a class="🇹🇳 ⠭" rel="me" href="https://social.vivaldi.net/@NECjAR" target="_blank" style="display:none; color:#595aff"><i class="fab fa-mastodon"></i><span class="⠭ ⠭⠇ ⢸white">NECjAR<small><br />Mastodon.</small></span></a>
-            <a class="🇹🇳 ⠭" rel="me" href="https://social.vivaldi.net/@Kadae" target="_blank" style="display:none; color:#595aff"><i class="fab fa-mastodon"></i><span class="⠭ ⠭⠇ ⢸white">Kadae<small><br />Mastodon.</small></span></a>
-            <a class="🇹🇳 ⠭" rel="me" href="https://social.vivaldi.net/@Anna" target="_blank" style="display:none; color:#595aff"><i class="fab fa-mastodon"></i><span class="⠭ ⠭⠇ ⢸white">Anna<small><br />Mastodon.</small></span></a>
-          </div>
+            <a class="🇹🇳 j-tooltip-parent" href="out?https://twitter.com/NECjAR" target="_blank" style="color:#1da1f2"><i class="fab fa-twitter"></i><span class="j-tooltip j-tooltip-top ⢸white">@NECjAR<small><br />Twitter.</small></span></a>
+            <a class="🇹🇳 j-tooltip-parent" href="out?https://telegram.me/NECjAR" target="_blank" style="color:#32afed"><i class="fab fa-telegram"></i><span class="j-tooltip j-tooltip-top ⢸white">@NECjAR<small><br />Telegram.</small></span></a>
+            <a class="🇹🇳 j-tooltip-parent" href="out?https://github.com/NECjAR" target="_blank" style="color:#c6cbd1"><i class="fab fa-github"></i><span class="j-tooltip j-tooltip-top ⢸white">NECjAR<small><br />GitHub.</small></span></a>
+            <a class="🇹🇳 j-tooltip-parent" href="out?https://reddit.com/r/NECjAR" target="_blank" style="color:#ff4500"><i class="fab fa-reddit"></i><span class="j-tooltip j-tooltip-top ⢸white">r/NECjAR<small><br />Reddit.</small></span></a>
+            <a class="🇹🇳 j-tooltip-parent" href="out?https://www.linkedin.com/company/necjar" target="_blank" style="color:#0077b5"><i class="fab fa-linkedin"></i><span class="j-tooltip j-tooltip-top ⢸white">NECjAR<small><br />LinkedIn.</small></span></a>
+            <a class="🇹🇳 j-tooltip-parent" href="out?https://www.youtube.com/c/NECjAR?sub_confirmation=1" target="_blank" style="color:#ff0000"><i class="fab fa-youtube"></i><span class="j-tooltip j-tooltip-top ⢸white">NECjAR<small><br />Subscribe.</small></span></a>
+            <a class="🇹🇳 j-tooltip-parent" rel="me" href="https://social.vivaldi.net/@NECjAR" target="_blank" style="display:none; color:#595aff"><i class="fab fa-mastodon"></i><span class="j-tooltip j-tooltip-top ⢸white">NECjAR<small><br />Mastodon.</small></span></a>
+            <a class="🇹🇳 j-tooltip-parent" rel="me" href="https://social.vivaldi.net/@Kadae" target="_blank" style="display:none; color:#595aff"><i class="fab fa-mastodon"></i><span class="j-tooltip j-tooltip-top ⢸white">Kadae<small><br />Mastodon.</small></span></a>
+            <a class="🇹🇳 j-tooltip-parent" rel="me" href="https://social.vivaldi.net/@Anna" target="_blank" style="display:none; color:#595aff"><i class="fab fa-mastodon"></i><span class="j-tooltip j-tooltip-top ⢸white">Anna<small><br />Mastodon.</small></span></a>
+          </div>-->
         </div>
-        <div class="⎵"></div>
         <div class="🇧🇧">
           <p class="⡔ ⡻ ⤄"><q>Our ambition is unlimited</q></p>
         </div>
       </div>
-
-      <details>
-        <summary class="⡘">HTML5</summary>
-        <div>
-          <!-- Cara Delevingne -->
-          How does one <u>mispell</u> the word misspell?<br />
-          User <bdi>إيان</bdi>: 195 posts<br />
-          How to <bdo dir="rtl">override text direction? I think you already know!</bdo><br />
-          <meter min="0" max="100" value="25" optimum="30" title="millimeters">25mm</meter><br />
-          <fieldset>
-            <legend><b>Address Details</b></legend>
-            Favorite Address <input type="text" style="width:120px;" /><br />
-          </fieldset>
-          <object data="<?=$jApp_domainURL?>/j/sexy/another.cfm" width="350" height="95"></object><br />
+      <!--<div class="⇓ ⤄">
+        <div class="𝈷𝈶">
+          <Donate />
         </div>
-      </details>
-
-      <article>
-        <header class="⡩"><h1><strong>What</strong> the fuck?</h1></header>
-        <section class="⡪">We noticed you’re blocking ads.</section>
-        <footer class="⡫"><a class="⡰" href="javascript:;" onclick="">Yes, I do</a></footer>
-      </article>
-
+        <div class="∅"></div>
+      </div>-->
     </div>
   </footer>
-  <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-    <h3>
-      Follow <a href="https://twitter.com/NECjAR" target="_blank" rel="noopener">NECjAR on Twitter</a>.
-    </h3>
-  </div>
 </template>
 
 <style scoped>
-h1 {
-  font-weight: 500;
-  font-size: 2.6rem;
-  position: relative;
-  top: -10px;
-}
-
-h3 {
-  font-size: 1.2rem;
-}
-
-.greetings h1,
-.greetings h3 {
-  text-align: center;
-}
-
-@media (min-width: 1024px) {
-  .greetings h1,
-  .greetings h3 {
-    text-align: left;
-  }
-}
 </style>

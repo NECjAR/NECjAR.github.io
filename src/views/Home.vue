@@ -1,6 +1,20 @@
+<script setup>
+import Landing from './../components/Landing.vue'
+
+/*window.onbeforeunload = function(_event) {
+  _event = _event || window.event;
+
+  // For IE and Firefox prior to version 4
+  if (_event) _event.returnValue = "Sure?";
+
+  // For Safari
+  return "Sure?";
+};*/
+</script>
+
 <template>
-  <main>
-    <img alt="NECjAR logo" class="logo" src="/icons/kadae.jpg" width="350" height="280" />
-    <p>NECjAR 2024, Coming soon</p>
-  </main>
+  <Landing />
 </template>
+
+<style scoped>
+</style>

@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import ComingSoon from '../views/ComingSoon.vue'
 
 const Anna = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,6 +22,21 @@ const Anna = createRouter({
       component: () => import('../views/About.vue'),
       meta: {
         title: "NECjAR | About",
+      }
+    },
+    {
+      path: '/anna',
+      name: 'anna',
+      component: () => import('../views/Anna.vue'),
+      meta: {
+        title: "Anna",
+      }
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      component: () => import('../views/PageNotFound.vue'),
+      meta: {
+        title: "Not Found",
       }
     }
   ]

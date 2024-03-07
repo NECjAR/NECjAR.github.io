@@ -12,7 +12,7 @@
   .⣸⣚ {width:0; height:1px; background:#f90;}
 }
 .⣽ {width:100%;
-  >li {transition:all @j-second-speed ease-in-out;}
+  >li {transition:all .3s ease-in-out;}
 }
 .⣽⢣ {clear:both; margin:0 0 20px;}
 
@@ -41,17 +41,17 @@
 .⣲¹⁰⠠,
 .⣲20⠠,
 .⣲5⠠ {filter:brightness(.5) grayscale(1); pointer-events:none;}
-.⣲⠦ {transition:@j-second-speed ease filter;}
+.⣲⠦ {transition:.3s ease filter;}
 .⣲¹⁰ {
-  &::before {content:""; .SetAbsolute(); z-index:1; margin:auto; .SetSize(120px,120px); background:url('@{jPath}images/cards/locked.png') center/cover;}
+  &::before {content:""; position:absolute; inset:0; z-index:1; margin:auto; .SetSize(120px,120px); background:url('@{path}images/cards/locked.png') center/cover;}
   &::after {content:"Need 10 unlocked achievements"; position:absolute; right:0; bottom:5%; left:0; z-index:6; padding:5px; font-size:.7em; text-align:center; color:#fff;}
 }
 .⣲20 {
-  &::before {content:""; .SetAbsolute(); z-index:1; margin:auto; .SetSize(120px,120px); background:url('@{jPath}images/cards/locked.png') center/cover;}
+  &::before {content:""; position:absolute; inset:0; z-index:1; margin:auto; .SetSize(120px,120px); background:url('@{path}images/cards/locked.png') center/cover;}
   &::after {content:"Need 20 unlocked achievements"; position:absolute; right:0; bottom:5%; left:0; z-index:6; padding:5px; font-size:.7em; text-align:center; color:#fff;}
 }
 .⣲5 {
-  &::before {content:""; .SetAbsolute(); z-index:1; margin:auto; .SetSize(120px,120px); background:url('@{jPath}images/cards/locked.png') center/cover;}
+  &::before {content:""; position:absolute; inset:0; z-index:1; margin:auto; .SetSize(120px,120px); background:url('@{path}images/cards/locked.png') center/cover;}
   &::after {content:"Need 5 collected cards"; position:absolute; right:0; bottom:5%; left:0; z-index:6; padding:5px; font-size:.7em; text-align:center; color:#fff;}
 }
 .⣲⠠ {
@@ -89,8 +89,8 @@
       &.⣡,
       &.⣲ {opacity:0; visibility:hidden; margin-left:100px;}
       &.▪ {opacity:1; visibility:visible; margin-left:0; transform:rotate3d(0,1,1,3deg); animation:j-card-flip 1s 1 alternate ease-in-out; background-color:#000;
-        &::before {content:""; display:block; opacity:0; visibility:hidden; animation:j-card-flip-bg 1s 1 alternate ease-in-out; .SetAbsolute(); z-index:7; background:url('@{jPath}images/cards/card-bg.jpg') center/cover #bebebe;}
-        &::after {content:attr(data-close); display:block; opacity:0; visibility:hidden; .SetAbsolute(); padding:25% 5% 5%; background:url('@{jPath}source/card-close.png') top right no-repeat rgba(0,0,0,.9); background-size:15%; font-size:1.6em; color:#fff; text-align:center; z-index:8; transition:@j-second-speed ease opacity;}
+        &::before {content:""; display:block; opacity:0; visibility:hidden; animation:j-card-flip-bg 1s 1 alternate ease-in-out; position:absolute; inset:0; z-index:7; background:url('@{path}images/cards/card-bg.jpg') center/cover #bebebe;}
+        &::after {content:attr(data-close); display:block; opacity:0; visibility:hidden; position:absolute; inset:0; padding:25% 5% 5%; background:url('@{path}source/card-close.png') top right no-repeat rgba(0,0,0,.9); background-size:15%; font-size:1.6em; color:#fff; text-align:center; z-index:8; transition:.3s ease opacity;}
         &:hover::after {opacity:1; visibility:visible;}
       }
       a {pointer-events:none;}
