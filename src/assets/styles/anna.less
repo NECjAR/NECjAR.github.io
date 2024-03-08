@@ -108,7 +108,7 @@
 @media screen and (max-width:1280px) and (min-width:721px)
 {
   .hexagon-item {width:@hex-width-md; padding-bottom:@hex-height-md;
-    &:empty + .hexagon-item:empty {display:none;}
+    //&:empty + .hexagon-item:empty {display:none;}
     &:nth-child(2n+2) {margin:0 1%;}
     &:nth-child(4n+3) {margin-left:0.5%;}
     &:nth-child(4n+3),
@@ -122,7 +122,7 @@
 @media screen and (max-width:720px)
 {
   .hexagon-item {width:@hex-width-sm; padding-bottom:@hex-height-sm;
-    &:empty {display:none;}
+    //&:empty {display:none;}
     &:nth-child(2n+2) {margin:@hex-margin-sm 0 @hex-margin-sm 1%; transform:translateX(50%) rotate(-60deg) skewY(30deg) scale(1,1);
       &:last-child {margin-bottom:0%;}
       &:not(.inactive) {
