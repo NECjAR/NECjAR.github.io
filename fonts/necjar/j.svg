@@ -1,0 +1,41 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20201107 at Fri Jan 15 02:49:45 2010
+ By 
+(c) 1990, 1991, 1992, 1994, 1997, 1998, 2000, 2002, 2004 Adobe Systems Incorporated. All rights reserved.
+</metadata>
+<defs>
+<font id="MinionPro-Bold" horiz-adv-x="500" >
+  <font-face 
+    font-family="Minion Pro"
+    font-weight="700"
+    font-stretch="normal"
+    units-per-em="1000"
+    panose-1="2 4 7 3 6 2 1 2 2 3"
+    ascent="727"
+    descent="-273"
+    bbox="-22 -244 500 700"
+    underline-thickness="50"
+    underline-position="-200"
+    unicode-range="U+0020-006A"
+  />
+<missing-glyph 
+d="M500 0h-500v700h500v-700zM420 650h-340l170 -255zM450 95v510l-170 -255zM80 50h340l-170 255zM50 605v-510l170 255z" />
+    <glyph glyph-name=".notdef" 
+d="M500 0h-500v700h500v-700zM420 650h-340l170 -255zM450 95v510l-170 -255zM80 50h340l-170 255zM50 605v-510l170 255z" />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" horiz-adv-x="333" 
+ />
+    <glyph glyph-name="space" unicode=" " horiz-adv-x="217" 
+ />
+    <glyph glyph-name="j" unicode="j" horiz-adv-x="288" 
+d="M148 517q-28 0 -49 21t-21 49q0 30 21 50t50 20q30 0 50.5 -20t20.5 -50q0 -29 -21 -49.5t-51 -20.5zM32 388v30q70 8 189 36v-325q0 -94 -28 -162q-27 -63 -71.5 -121t-68.5 -75q-20 -15 -35 -15q-12 0 -26 16.5t-14 38.5q0 12 6.5 19.5t17.5 7.5q64 3 75 20q9 18 12 71
+q4 79 4 188v188q0 52 -9.5 64t-51.5 19z" />
+    <hkern g1="j"
+	g2="j"
+	k="11" />
+  </font>
+</defs></svg>

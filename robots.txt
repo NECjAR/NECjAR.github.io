@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /out?
+Host: necjar.com
+Sitemap: https://necjar.com/sitemap.xml
