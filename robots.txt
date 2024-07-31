@@ -2,6 +2,6 @@ User-Agent: *
 Allow: /
 Disallow: /out*
 Disallow: /soon
-Disallow: /_payload.json*
+Disallow: */_payload.json*
 Host: necjar.com
 Sitemap: https://necjar.com/sitemap.xml
