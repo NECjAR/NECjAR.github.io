@@ -1,5 +1,6 @@
 User-Agent: *
 Allow: /
 Disallow: /out?
+Disallow: /soon
 Host: necjar.com
 Sitemap: https://necjar.com/sitemap.xml
