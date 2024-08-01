@@ -4,5 +4,6 @@ Disallow: /out*
 Disallow: /soon
 Disallow: */_payload.json*
 Disallow: *#*
+Disallow: *?*
 Host: necjar.com
 Sitemap: https://necjar.com/sitemap.xml
