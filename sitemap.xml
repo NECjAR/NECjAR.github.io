@@ -37,7 +37,70 @@
         <loc>https://necjar.com/terms</loc>
     </url>
     <url>
+        <loc>https://necjar.com/hhh/digger</loc>
+    </url>
+    <url>
         <loc>https://necjar.com/hhh/traveler</loc>
+    </url>
+    <url>
+        <loc>https://necjar.com/hhh/digger/1</loc>
+        <image:image>
+            <image:loc>https://necjar.com/hhh/digger/1/ru-0001.jpg</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://necjar.com/hhh/digger/2</loc>
+        <image:image>
+            <image:loc>https://necjar.com/hhh/digger/1/ru-0002.jpg</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://necjar.com/hhh/digger/3</loc>
+        <image:image>
+            <image:loc>https://necjar.com/hhh/digger/1/ru-0003.jpg</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://necjar.com/hhh/digger/4</loc>
+        <image:image>
+            <image:loc>https://necjar.com/hhh/digger/1/ru-0004.jpg</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://necjar.com/hhh/digger/5</loc>
+        <image:image>
+            <image:loc>https://necjar.com/hhh/digger/1/ru-0005.jpg</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://necjar.com/hhh/digger/6</loc>
+        <image:image>
+            <image:loc>https://necjar.com/hhh/digger/1/ru-0006.jpg</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://necjar.com/hhh/digger/7</loc>
+        <image:image>
+            <image:loc>https://necjar.com/hhh/digger/1/ru-0007.jpg</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://necjar.com/hhh/digger/8</loc>
+        <image:image>
+            <image:loc>https://necjar.com/hhh/digger/1/ru-0008.jpg</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://necjar.com/hhh/digger/9</loc>
+        <image:image>
+            <image:loc>https://necjar.com/hhh/digger/1/ru-0009.jpg</image:loc>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://necjar.com/hhh/digger/10</loc>
+        <image:image>
+            <image:loc>https://necjar.com/hhh/digger/1/ru-0010.jpg</image:loc>
+        </image:image>
     </url>
     <url>
         <loc>https://necjar.com/hhh/traveler/1</loc>
