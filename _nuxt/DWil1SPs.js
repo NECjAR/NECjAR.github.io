@@ -1,0 +1,1 @@
+const t=()=>({legacy:!1,locale:"en",messages:{en:{titleDonate:"Donate",titlePolicy:"Policy",titleSearch:"Search",titleStore:"Store",titleSun:"Sun"},ru:{titleDonate:"Донат",titlePolicy:"Политика",titleSearch:"Поиск",titleStore:"Магазин",titleSun:"Солнце"}}});export{t as default};
