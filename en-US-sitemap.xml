@@ -20,12 +20,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://necjar.com/donate" />
     </url>
     <url>
-        <loc>https://necjar.com/echo</loc>
-        <xhtml:link rel="alternate" hreflang="en-US" href="https://necjar.com/echo" />
-        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://necjar.com/ru/echo" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://necjar.com/echo" />
-    </url>
-    <url>
         <loc>https://necjar.com/gr8</loc>
         <xhtml:link rel="alternate" hreflang="en-US" href="https://necjar.com/gr8" />
         <xhtml:link rel="alternate" hreflang="ru-RU" href="https://necjar.com/ru/gr8" />
@@ -42,6 +36,12 @@
         <xhtml:link rel="alternate" hreflang="en-US" href="https://necjar.com/kadae" />
         <xhtml:link rel="alternate" hreflang="ru-RU" href="https://necjar.com/ru/kadae" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://necjar.com/kadae" />
+    </url>
+    <url>
+        <loc>https://necjar.com/muse</loc>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://necjar.com/muse" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://necjar.com/ru/muse" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://necjar.com/muse" />
     </url>
     <url>
         <loc>https://necjar.com/out</loc>
