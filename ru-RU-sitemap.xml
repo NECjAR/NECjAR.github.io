@@ -19,6 +19,12 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://necjar.com/donate" />
     </url>
     <url>
+        <loc>https://necjar.com/ru/HeadHeldHigh</loc>
+        <xhtml:link rel="alternate" hreflang="en-US" href="https://necjar.com/HeadHeldHigh" />
+        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://necjar.com/ru/HeadHeldHigh" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://necjar.com/HeadHeldHigh" />
+    </url>
+    <url>
         <loc>https://necjar.com/ru/HHH</loc>
         <xhtml:link rel="alternate" hreflang="en-US" href="https://necjar.com/HHH" />
         <xhtml:link rel="alternate" hreflang="ru-RU" href="https://necjar.com/ru/HHH" />
