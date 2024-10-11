@@ -1,7 +1,16 @@
 User-Agent: *
 Allow: /
 Disallow: /out*
-Disallow: /soon
+Disallow: /store?*
+Disallow: /gr8/*
+Disallow: /ics*
+Disallow: /catective*
+Disallow: /madkad*
+Disallow: /projects*
+Disallow: /people*
+Disallow: /error*
+Disallow: /headheldhigh/traveler/*
+Disallow: /j/*
 Disallow: */_payload.json*
 Disallow: *#*
 Disallow: *?*
