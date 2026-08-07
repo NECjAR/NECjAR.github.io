@@ -1,0 +1,25 @@
+User-Agent: *
+Allow: /
+Disallow: /out*
+Disallow: /store?*
+Disallow: /gr8/*
+Disallow: /ics/*
+Disallow: /catective/*
+Disallow: /madkad/*
+Disallow: /projects/*
+Disallow: /people/*
+Disallow: /error/*
+Disallow: /headheldhigh/traveler/*
+Disallow: /j/*
+Disallow: /tv/*
+Disallow: */_payload.json*
+Disallow: *#*
+Disallow: *?*
+Host: necjar.com
+Sitemap: https://necjar.com/sitemap.xml
+
+User-Agent: ia_archiver
+Disallow: /
+
+User-Agent: archive.org_bot
+Disallow: /

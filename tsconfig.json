@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "types": ["@types/dompurify", "@nuxt/types"],
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "~/types/*": ["types/*"]
+    }
+  }
+}

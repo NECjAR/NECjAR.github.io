@@ -1,0 +1,48 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Created by FontForge 20201107 at Tue Oct 17 18:49:00 2017
+ By 
+(c) 2016 Microsoft Corporation. All rights reserved.
+</metadata>
+<defs>
+<font id="TrebuchetMS-Bold" horiz-adv-x="1024" >
+  <font-face 
+    font-family="Trebuchet MS"
+    font-weight="700"
+    font-stretch="normal"
+    units-per-em="2048"
+    panose-1="2 11 7 3 2 2 2 2 2 4"
+    ascent="1638"
+    descent="-410"
+    cap-height="1485"
+    bbox="5 -25 1292 1490"
+    underline-thickness="200"
+    underline-position="-561"
+    unicode-range="U+0020-0052"
+  />
+<missing-glyph 
+d="M128 350v768h768v-768h-768zM256 478h512v512h-512v-512z" />
+    <glyph glyph-name=".notdef" 
+d="M128 350v768h768v-768h-768zM256 478h512v512h-512v-512z" />
+    <glyph glyph-name="glyph1" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="glyph2" horiz-adv-x="823" 
+ />
+    <glyph glyph-name="space" unicode=" " horiz-adv-x="617" 
+ />
+    <glyph glyph-name="A" unicode="A" horiz-adv-x="1297" 
+d="M1005 0l-107 297h-502l-102 -297h-289l584 1485h114l589 -1485h-287zM646 1037l-176 -541h352z" />
+    <glyph glyph-name="C" unicode="C" horiz-adv-x="1253" 
+d="M1154 1387l-107 -215q-87 87 -280 87q-183 0 -300 -153.5t-117 -388.5t108.5 -373t289.5 -138q207 0 324 148l121 -210q-159 -169 -466 -169t-477 202t-170 551q0 325 188.5 543.5t482.5 218.5q252 0 403 -103z" />
+    <glyph glyph-name="E" unicode="E" horiz-adv-x="1165" 
+d="M410 1234v-343h484v-221h-484v-439h664v-231h-924v1465h935v-231h-675z" />
+    <glyph glyph-name="N" unicode="N" horiz-adv-x="1367" 
+d="M1111 -20l-711 927v-908h-250v1466h125l692 -884v884h250v-1485h-106z" />
+    <glyph glyph-name="R" unicode="R" horiz-adv-x="1251" 
+d="M976 0l-391 605q-59 1 -165 7v-612h-270v1465q22 0 169 7.5t237 7.5q558 0 558 -432q0 -130 -77 -237t-194 -151l433 -660h-300zM420 1239v-407q72 -6 110 -6q163 0 238.5 46t75.5 179q0 108 -81 151t-255 43q-42 0 -88 -6z" />
+    <hkern u1="&#x20;" u2="A" k="113" />
+    <hkern u1="A" u2="&#x20;" k="113" />
+  </font>
+</defs></svg>
